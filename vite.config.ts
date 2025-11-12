@@ -23,6 +23,22 @@ export default defineConfig({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true,
+    // Optimizaciones de build para SEO/Performance
+    minify: 'esbuild',
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom'],
+          'ui': ['@radix-ui/react-accordion', '@radix-ui/react-dialog', '@radix-ui/react-dropdown-menu'],
+        },
+      },
+    },
+    // Reportar tamaño de bundle para monitoreo
+    reportCompressedSize: true,
+    // Configurar qué archivos se incluyen en el build
+    sourcemap: false,
+    cssCodeSplit: true,
+    assetsInlineLimit: 4096,
   },
   server: {
     port: 3000,

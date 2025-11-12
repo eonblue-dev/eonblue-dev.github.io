@@ -61,8 +61,26 @@ export default function Home() {
   }, []);
 
   const skills = [
-    "React", "NextJS", "TypeScript", "JavaScript", "Node.js",
-    "SQL", "Kotlin", "C#", "PHP", "Python"
+    // Frontend
+    "React", "NextJS", "TypeScript", "JavaScript", "Tailwind CSS",
+    // Backend
+    "Node.js", "NestJS", "Express",
+    // Databases
+    "SQL", "MongoDB", "PostgreSQL",
+    // Mobile
+    "Kotlin", "React Native",
+    // Other Languages
+    "C#", "PHP", "Python",
+    // AI & ML
+    "TensorFlow", "PyTorch", "Keras", "scikit-learn",
+    // Big Data
+    "Apache Spark", "Hadoop", "Kafka",
+    // Data Analysis
+    "Pandas", "NumPy", "Matplotlib", "Seaborn",
+    // Cloud
+    "AWS", "GCP", "Azure",
+    // Tools
+    "Git", "Docker", "Vite", "REST API", "GraphQL"
   ];
 
   const experience = [
@@ -193,7 +211,7 @@ export default function Home() {
               PEDRO LUÍS<br />RODRÍGUEZ FLORES
             </h1>
             <p className="hero-text text-2xl md:text-3xl text-muted-foreground opacity-0">
-              Desarrollador Multiplataforma & Full Stack ESPECIALIZADO en IA y Big Data
+              Desarrollador Multiplataforma & Full Stack ESPECIALIZA en IA y Big Data
             </p>
             <p className="hero-text text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto opacity-0">
               Graduado en Desarrollo Web y Multiplataforma, con conocimientos en variados lenguajes de programación. Me apasiona la tecnología y estoy motivado por crecer profesionalmente y aportar valor en equipos dinámicos e innovadores.
@@ -272,17 +290,176 @@ export default function Home() {
           <h2 className="animate-item text-4xl md:text-5xl font-bold text-center mb-16 opacity-0">
             Habilidades Técnicas
           </h2>
-          <div className="max-w-4xl mx-auto">
-            <div className="flex flex-wrap gap-3 justify-center">
-              {skills.map((skill, index) => (
-                <Badge
-                  key={skill}
-                  className="animate-item text-lg px-6 py-3 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
-                  {skill}
-                </Badge>
-              ))}
+          <div className="max-w-6xl mx-auto">
+            {/* Frontend */}
+            <div className="mb-12">
+              <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                <Code2 className="w-6 h-6 text-primary" />
+                Frontend
+              </h3>
+              <div className="flex flex-wrap gap-3 justify-start">
+                {["React", "NextJS", "TypeScript", "JavaScript", "Tailwind CSS"].map((skill, index) => (
+                  <Badge
+                    key={skill}
+                    className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* Backend */}
+            <div className="mb-12">
+              <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                <Code2 className="w-6 h-6 text-accent" />
+                Backend
+              </h3>
+              <div className="flex flex-wrap gap-3 justify-start">
+                {["Node.js", "NestJS", "Express", "REST API", "GraphQL"].map((skill, index) => (
+                  <Badge
+                    key={skill}
+                    className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* Databases */}
+            <div className="mb-12">
+              <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                <Database className="w-6 h-6 text-primary" />
+                Bases de Datos
+              </h3>
+              <div className="flex flex-wrap gap-3 justify-start">
+                {["SQL", "PostgreSQL", "MongoDB", "Cassandra"].map((skill, index) => (
+                  <Badge
+                    key={skill}
+                    className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* Programming Languages */}
+            <div className="mb-12">
+              <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                <Code2 className="w-6 h-6 text-accent" />
+                Lenguajes de Programación
+              </h3>
+              <div className="flex flex-wrap gap-3 justify-start">
+                {["Python", "JavaScript", "TypeScript", "Kotlin", "C#", "PHP", "Java"].map((skill, index) => (
+                  <Badge
+                    key={skill}
+                    className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* AI & Machine Learning */}
+            <div className="mb-12">
+              <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                <Brain className="w-6 h-6 text-primary" />
+                Machine Learning & Deep Learning
+              </h3>
+              <div className="flex flex-wrap gap-3 justify-start">
+                {["TensorFlow", "PyTorch", "Keras", "scikit-learn", "XGBoost", "NLTK"].map((skill, index) => (
+                  <Badge
+                    key={skill}
+                    className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* Big Data */}
+            <div className="mb-12">
+              <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                <Database className="w-6 h-6 text-accent" />
+                Big Data & Processing
+              </h3>
+              <div className="flex flex-wrap gap-3 justify-start">
+                {["Apache Spark", "Hadoop", "Kafka", "Airflow", "Hive", "Flink"].map((skill, index) => (
+                  <Badge
+                    key={skill}
+                    className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* Data Analysis */}
+            <div className="mb-12">
+              <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                <TrendingUp className="w-6 h-6 text-primary" />
+                Análisis de Datos
+              </h3>
+              <div className="flex flex-wrap gap-3 justify-start">
+                {["Pandas", "NumPy", "Matplotlib", "Seaborn", "Plotly", "Jupyter"].map((skill, index) => (
+                  <Badge
+                    key={skill}
+                    className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* Cloud & DevOps */}
+            <div className="mb-12">
+              <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                <Cloud className="w-6 h-6 text-accent" />
+                Cloud & DevOps
+              </h3>
+              <div className="flex flex-wrap gap-3 justify-start">
+                {["AWS", "GCP", "Azure", "Docker", "Kubernetes", "GitHub Actions"].map((skill, index) => (
+                  <Badge
+                    key={skill}
+                    className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+
+            {/* Tools & Others */}
+            <div className="mb-12">
+              <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                <Cpu className="w-6 h-6 text-primary" />
+                Herramientas & Otros
+              </h3>
+              <div className="flex flex-wrap gap-3 justify-start">
+                {["Git", "Linux", "Vite", "Webpack", "Postman", "VS Code", "Jupyter Notebook"].map((skill, index) => (
+                  <Badge
+                    key={skill}
+                    className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
+                    style={{ animationDelay: `${index * 50}ms` }}
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -593,3 +770,6 @@ export default function Home() {
     </div>
   );
 }
+
+
+// Hook para gestionar SEO dinámico

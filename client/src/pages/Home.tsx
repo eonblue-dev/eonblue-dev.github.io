@@ -212,7 +212,7 @@ export default function Home() {
               PEDRO LUÍS<br />RODRÍGUEZ FLORES
             </h1>
             <p className="hero-text text-2xl md:text-3xl text-muted-foreground opacity-0">
-              Desarrollador Multiplataforma & Full Stack ESPECIALIZA en IA y Big Data
+              Desarrollador Multiplataforma & Full Stack ESPECIALIZADO en IA y Big Data
             </p>
             <p className="hero-text text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto opacity-0">
               Graduado en Desarrollo Web y Multiplataforma, con conocimientos en variados lenguajes de programación. Me apasiona la tecnología y estoy motivado por crecer profesionalmente y aportar valor en equipos dinámicos e innovadores.

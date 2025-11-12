@@ -1,0 +1,27 @@
+# GitHub Pages Jekyll Configuration
+theme: null
+plugins: []
+
+# Exclude files from Jekyll processing
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - .env
+  - .git
+
+# Include files
+include:
+  - .nojekyll
+  - sitemap.xml
+  - robots.txt
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Headers
+webrick:
+  headers:
+    X-UA-Compatible: "IE=edge"
+    X-Content-Type-Options: "nosniff"

@@ -1,0 +1,20 @@
+# Robots.txt para SEO
+User-agent: *
+Allow: /
+Allow: /assets/
+Disallow: /admin/
+Disallow: /.env
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://eonblue-dev.github.io/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 1
+
+# Specific bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

@@ -259,9 +259,9 @@ export default function Home() {
                     <Code2 className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Desarrollador Full Stack</h3>
+                    <h3 className="text-xl font-semibold mb-2">Desarrollador la buena vibra</h3>
                     <p className="text-muted-foreground">
-                      Especializado en tecnologías modernas como React, NestJS y TypeScript. Con experiencia en desarrollo web y aplicaciones multiplataforma, he trabajado en proyectos completos aplicando buenas prácticas y metodologías ágiles.
+                      Desde pequeño me ha apasionado la tecnología y la programación. A lo largo de mi formación en Desarrollo Web y Multiplataforma, he adquirido habilidades en diversos lenguajes y tecnologías, incluyendo React, Node.js, Python y bases de datos SQL y NoSQL. Me considero una persona proactiva, con ganas de aprender y crecer profesionalmente en el ámbito del desarrollo de software.
                     </p>
                   </div>
                 </div>

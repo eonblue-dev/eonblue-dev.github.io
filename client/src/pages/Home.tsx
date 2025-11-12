@@ -259,9 +259,10 @@ export default function Home() {
                     <Code2 className="w-6 h-6 text-primary" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Desarrollador la buena vibra</h3>
+                    <h3 className="text-xl font-semibold mb-2">Desarrollar la buena vibra</h3>
                     <p className="text-muted-foreground">
-                      Desde pequeño me ha apasionado la tecnología y la programación. A lo largo de mi formación en Desarrollo Web y Multiplataforma, he adquirido habilidades en diversos lenguajes y tecnologías, incluyendo React, Node.js, Python y bases de datos SQL y NoSQL. Me considero una persona proactiva, con ganas de aprender y crecer profesionalmente en el ámbito del desarrollo de software.
+                      Desde pequeño me ha apasionado el voleibol, futbol y , de vez en cuando tomar una cerveza con buena compañía.
+                      Actualmente, estoy enfocado en desarrollar mis habilidades técnicas mientras disfruto de la vida fuera de la pantalla. Mi objetivo es contribuir a proyectos innovadores que combinen desarrollo de software con soluciones de inteligencia artificial.
                     </p>
                   </div>
                 </div>

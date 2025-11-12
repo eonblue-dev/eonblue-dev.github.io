@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Mail, Linkedin, Github, Code2, Briefcase, GraduationCap, Award, ChevronDown, Brain, Database, Cpu, TrendingUp, Network, Cloud } from "lucide-react";
+import { Smartphone } from "lucide-react";
 import FloatingNav from "@/components/FloatingNav";
 import ParticlesBackground from "@/components/ParticlesBackground";
 
@@ -405,7 +406,43 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Data Analysis */}
+              {/* Full Stack Development */}
+              <div className="mb-12">
+                <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                  <Cpu className="w-6 h-6 text-primary" />
+                  Full Stack Development
+                </h3>
+                <div className="flex flex-wrap gap-3 justify-start">
+                  {["React + Node.js", "Next.js Full Stack", "MERN Stack", "LAMP Stack", "MVC Architecture", "Microservicios"].map((skill, index) => (
+                    <Badge
+                      key={skill}
+                      className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
+                      style={{ animationDelay: `${index * 50}ms` }}
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
+
+              {/* Android Development */}
+              <div className="mb-12">
+                <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
+                  <Smartphone className="w-6 h-6 text-accent" />
+                  Desarrollo Android
+                </h3>
+                <div className="flex flex-wrap gap-3 justify-start">
+                  {["Kotlin", "Java", "Android Studio", "Jetpack Compose", "Material Design", "Firebase", "SQLite", "Room Database"].map((skill, index) => (
+                    <Badge
+                      key={skill}
+                      className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"
+                      style={{ animationDelay: `${index * 50}ms` }}
+                    >
+                      {skill}
+                    </Badge>
+                  ))}
+                </div>
+              </div>
             <div className="mb-12">
               <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
                 <TrendingUp className="w-6 h-6 text-primary" />

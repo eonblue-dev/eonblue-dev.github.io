@@ -36,16 +36,16 @@ export default function ParticlesBackground() {
       // Animación continua de partículas
       animate(particle, {
         translateX: [
-          { value: `${(Math.random() - 0.5) * 100}px`, duration: Math.random() * 3000 + 2000 },
-          { value: 0, duration: Math.random() * 3000 + 2000 }
+          { value: `${(Math.random() - 0.5) * 100}px`, duration: 300 },
+          { value: 0, duration: 300 }
         ],
         translateY: [
-          { value: `${(Math.random() - 0.5) * 100}px`, duration: Math.random() * 3000 + 2000 },
-          { value: 0, duration: Math.random() * 3000 + 2000 }
+          { value: `${(Math.random() - 0.5) * 100}px`, duration: 300 },
+          { value: 0, duration: 300 }
         ],
         opacity: [
-          { value: Math.random() * 0.5 + 0.2, duration: Math.random() * 2000 + 1000 },
-          { value: Math.random() * 0.3 + 0.1, duration: Math.random() * 2000 + 1000 }
+          { value: Math.random() * 0.5 + 0.2, duration: 300 },
+          { value: Math.random() * 0.3 + 0.1, duration: 300 }
         ],
         loop: true,
         easing: 'easeInOutSine'

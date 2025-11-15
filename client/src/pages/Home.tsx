@@ -18,7 +18,7 @@ export default function Home() {
       animate(heroRef.current.querySelectorAll('.hero-text'), {
         translateY: [50, 0],
         opacity: [0, 1],
-        duration: 1200,
+  duration: 300,
         delay: stagger(150),
         easing: 'easeOutExpo'
       });
@@ -28,7 +28,7 @@ export default function Home() {
         animate(heroCta, {
           scale: [0.8, 1],
           opacity: [0, 1],
-          duration: 800,
+    duration: 300,
           delay: 600,
           easing: 'easeOutElastic(1, .8)'
         });
@@ -43,7 +43,7 @@ export default function Home() {
             animate(entry.target.querySelectorAll('.animate-item'), {
               translateY: [30, 0],
               opacity: [0, 1],
-              duration: 800,
+              duration: 300,
               delay: stagger(100),
               easing: 'easeOutQuad'
             });

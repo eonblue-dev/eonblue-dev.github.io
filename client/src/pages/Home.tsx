@@ -1,3 +1,9 @@
+// Declaración global para window.__badgeDelay
+declare global {
+  interface Window {
+    __badgeDelay?: number;
+  }
+}
 import { useEffect, useRef } from "react";
 import { animate, stagger } from "animejs";
 import { Button } from "@/components/ui/button";
@@ -49,6 +55,9 @@ export default function Home() {
       return deltaY / (deltaT || 1);
     }
 
+    // Variable global para el delay dinámico
+    window.__badgeDelay = 50;
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -57,6 +66,8 @@ export default function Home() {
             const speed = getScrollSpeed();
             // Si speed > 1 px/ms, animación mínima (100ms), si lento, normal (300ms)
             const duration = speed > 1 ? 100 : 300;
+            // Ajustar el delay de los badges para que sea más corto si el scroll es rápido
+            window.__badgeDelay = duration < 200 ? 20 : 50;
             animate(entry.target.querySelectorAll('.animate-item'), {
               translateY: [30, 0],
               opacity: [0, 1],
@@ -321,7 +332,7 @@ export default function Home() {
                   <Badge
                     key={skill}
                     className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    style={{ animationDelay: `${index * (window.__badgeDelay || 50)}ms` }}
                   >
                     {skill}
                   </Badge>
@@ -340,7 +351,7 @@ export default function Home() {
                   <Badge
                     key={skill}
                     className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    style={{ animationDelay: `${index * (window.__badgeDelay || 50)}ms` }}
                   >
                     {skill}
                   </Badge>
@@ -359,7 +370,7 @@ export default function Home() {
                   <Badge
                     key={skill}
                     className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    style={{ animationDelay: `${index * (window.__badgeDelay || 50)}ms` }}
                   >
                     {skill}
                   </Badge>
@@ -378,7 +389,7 @@ export default function Home() {
                   <Badge
                     key={skill}
                     className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"
-                    style={{ animationDelay: `${index * 50}ms` }}
+                    style={{ animationDelay: `${index * (window.__badgeDelay || 50)}ms` }}
                   >
                     {skill}
                   </Badge>

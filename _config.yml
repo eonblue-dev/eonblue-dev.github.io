@@ -25,3 +25,4 @@ webrick:
   headers:
     X-UA-Compatible: "IE=edge"
     X-Content-Type-Options: "nosniff"
+    Cache-Control: "public, max-age=0, must-revalidate"

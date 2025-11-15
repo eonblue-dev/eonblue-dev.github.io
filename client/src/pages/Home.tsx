@@ -699,7 +699,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-4">
                   <a
-                    href="mailto:pedrl.rf2001@gmail.com"
+                    href="mailto:eonblue.dev@gmail.com"
                     className="flex items-center gap-4 p-4 rounded-lg bg-primary/10 hover:bg-primary/20 transition-all group"
                   >
                     <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:scale-110 transition-transform">

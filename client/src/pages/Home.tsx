@@ -498,7 +498,7 @@ export default function Home() {
                 Cloud & DevOps
               </h3>
               <div className="flex flex-wrap gap-3 justify-start">
-                {["AWS", "GCP", "Azure", "Docker", "Kubernetes", "GitHub Actions"].map((skill, index) => (
+                {["AWS", "GCP", "Azure", "Docker", "GitHub Actions"].map((skill, index) => (
                   <Badge
                     key={skill}
                     className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"

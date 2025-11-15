@@ -292,7 +292,7 @@ export default function Home() {
                       Desarrollando la buena vibra <a role="img" aria-label="onda">🌊</a>
                     </h3>
                     <p className="text-muted-foreground">
-                      Siempre me ha gustado el voleibol, futbol y , el fin de semana levantamiento de tercio con una buena compañía.
+                      Siempre me ha gustado el voleibol, jugar cualquier pokemon y , en el fin de semana levantamiento de tercio con una buena compañía.
                       Actualmente, estoy enfocado en desarrollar mis habilidades técnicas mientras disfruto de la vida fuera de la pantalla. Mi objetivo es contribuir a proyectos innovadores que combinen desarrollo de software con soluciones de inteligencia artificial.
                     </p>
                   </div>

@@ -65,15 +65,15 @@ export default function Home() {
           if (entry.isIntersecting) {
             // Calcula velocidad de scroll y ajusta duración
             const speed = getScrollSpeed();
-            // Si speed > 1 px/ms, animación mínima (100ms), si lento, normal (300ms)
-            const duration = speed > 1 ? 100 : 300;
-            // Ajustar el delay de los badges para que sea más corto si el scroll es rápido
-            setBadgeDelay(duration < 200 ? 20 : 50);
+            // Si speed > 1.5 px/ms, animación muy rápida (50ms), si normal (150ms), si lento (300ms)
+            const duration = speed > 1.5 ? 50 : speed > 0.5 ? 150 : 300;
+            // Ajustar el delay de los badges: muy rápido (5ms), rápido (10ms), normal (30ms)
+            setBadgeDelay(speed > 1.5 ? 5 : speed > 0.5 ? 10 : 30);
             animate(entry.target.querySelectorAll('.animate-item'), {
               translateY: [30, 0],
               opacity: [0, 1],
               duration,
-              delay: stagger(100),
+              delay: stagger(50),
               easing: 'easeOutQuad'
             });
             observer.unobserve(entry.target);

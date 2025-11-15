@@ -35,15 +35,32 @@ export default function Home() {
       }
     }
 
-    // Animaciones de scroll reveal para secciones
+    // Animaciones de scroll reveal para secciones con velocidad dinámica
+    let lastScrollY = window.scrollY;
+    let lastTimestamp = performance.now();
+
+    function getScrollSpeed() {
+      const now = performance.now();
+      const deltaY = Math.abs(window.scrollY - lastScrollY);
+      const deltaT = now - lastTimestamp;
+      lastScrollY = window.scrollY;
+      lastTimestamp = now;
+      // px/ms
+      return deltaY / (deltaT || 1);
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            // Calcula velocidad de scroll y ajusta duración
+            const speed = getScrollSpeed();
+            // Si speed > 1 px/ms, animación mínima (100ms), si lento, normal (300ms)
+            const duration = speed > 1 ? 100 : 300;
             animate(entry.target.querySelectorAll('.animate-item'), {
               translateY: [30, 0],
               opacity: [0, 1],
-              duration: 300,
+              duration,
               delay: stagger(100),
               easing: 'easeOutQuad'
             });

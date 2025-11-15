@@ -517,7 +517,7 @@ export default function Home() {
                 Herramientas & Otros
               </h3>
               <div className="flex flex-wrap gap-3 justify-start">
-                {["Git", "Linux", "Vite", "Webpack", "Postman", "VS Code", "Jupyter Notebook"].map((skill, index) => (
+                {["Git", "Linux", "Postman", "Figma", "Jira", "Scrum", "Agile", "CI/CD"].map((skill, index) => (
                   <Badge
                     key={skill}
                     className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"

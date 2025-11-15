@@ -416,15 +416,15 @@ export default function Home() {
                 ))}
               </div>
             </div>
-
-            {/* Big Data */}
+            
+            {/* Big Data 
             <div className="mb-12">
               <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
                 <Database className="w-6 h-6 text-accent" />
                 Big Data & Processing
               </h3>
               <div className="flex flex-wrap gap-3 justify-start">
-                {["Apache Spark", "Hadoop", "Kafka", "Airflow", "Hive", "Flink"].map((skill, index) => (
+                {["Apache Spark", "Hadoop", "Airflow", "Hive", "Flink"].map((skill, index) => (
                   <Badge
                     key={skill}
                     className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"
@@ -434,7 +434,7 @@ export default function Home() {
                   </Badge>
                 ))}
               </div>
-            </div>
+            </div> */}
 
               {/* Full Stack Development */}
               <div className="mb-12">
@@ -443,7 +443,7 @@ export default function Home() {
                   Full Stack Development
                 </h3>
                 <div className="flex flex-wrap gap-3 justify-start">
-                  {["React + Node.js", "Next.js Full Stack", "MERN Stack", "LAMP Stack", "MVC Architecture", "Microservicios"].map((skill, index) => (
+                  {["React + Node.js", "Next.js Full Stack", "MERN Stack", "MVC Architecture", "Microservicios"].map((skill, index) => (
                     <Badge
                       key={skill}
                       className="animate-item text-sm px-4 py-2 bg-primary/10 text-primary border-primary/30 hover:bg-primary hover:text-primary-foreground hover:scale-110 hover:shadow-lg hover:shadow-primary/50 transition-all cursor-pointer opacity-0"
@@ -462,7 +462,7 @@ export default function Home() {
                   Desarrollo Android
                 </h3>
                 <div className="flex flex-wrap gap-3 justify-start">
-                  {["Kotlin", "Java", "Android Studio", "Jetpack Compose", "Material Design", "Firebase", "SQLite", "Room Database"].map((skill, index) => (
+                  {["Kotlin", "Java", "Android Studio", "Jetpack Compose", "Material Design", "Firebase", "Room Database"].map((skill, index) => (
                     <Badge
                       key={skill}
                       className="animate-item text-sm px-4 py-2 bg-accent/10 text-accent border-accent/30 hover:bg-accent hover:text-accent-foreground hover:scale-110 hover:shadow-lg hover:shadow-accent/50 transition-all cursor-pointer opacity-0"

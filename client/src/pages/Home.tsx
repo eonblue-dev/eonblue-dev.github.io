@@ -709,7 +709,7 @@ export default function Home() {
                     </div>
                     <div>
                       <p className="font-medium">Email</p>
-                      <p className="text-sm text-muted-foreground">pedrl.rf2001@gmail.com</p>
+                      <p className="text-sm text-muted-foreground">eonblue.dev@gmail.com</p>
                     </div>
                   </a>
                   <a

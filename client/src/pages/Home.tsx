@@ -290,7 +290,7 @@ export default function Home() {
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Desarrollar la buena vibra</h3>
                     <p className="text-muted-foreground">
-                      Siempre me ha gustado el voleibol, futbol y , el fin de semana levantamiento de tercio con una buena compañía
+                      Siempre me ha gustado el voleibol, futbol y , el fin de semana levantamiento de tercio con una buena compañía.
                       Actualmente, estoy enfocado en desarrollar mis habilidades técnicas mientras disfruto de la vida fuera de la pantalla. Mi objetivo es contribuir a proyectos innovadores que combinen desarrollo de software con soluciones de inteligencia artificial.
                     </p>
                   </div>

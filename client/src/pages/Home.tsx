@@ -382,7 +382,9 @@ export default function Home() {
             </div>
 
             {/* Programming Languages */}
-            <div className="mb-12">
+            {
+              /*
+              <div className="mb-12">
               <h3 className="animate-item text-2xl font-semibold mb-6 flex items-center gap-3 opacity-0">
                 <Code2 className="w-6 h-6 text-accent" />
                 Lenguajes de Programación
@@ -399,6 +401,8 @@ export default function Home() {
                 ))}
               </div>
             </div>
+            */}
+            
 
             {/* AI & Machine Learning */}
             <div className="mb-12">
